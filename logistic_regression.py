@@ -46,17 +46,17 @@ while i<100:
   y_pred=clf.predict(X_test)
 # calculate the accuracy of the classifier
   score_list = []
-    score_list.append(accuracy_score(y_test, y_pred))
-    score_list.append(precision_score(y_test, y_pred, labels=[0,1], average='weighted'))
-    score_list.append(recall_score(y_test, y_pred, labels=[0,1], average='weighted'))
-    score_list.append(recall_score(y_test, y_pred, labels=[0,1], average='weighted'))
-    score_list.append(f1_score(y_test, y_pred, average='weighted', labels=[0, 1]))
+  score_list.append(accuracy_score(y_test, y_pred))
+  score_list.append(precision_score(y_test, y_pred, labels=[0,1], average='weighted'))
+  score_list.append(recall_score(y_test, y_pred, labels=[0,1], average='weighted'))
+  score_list.append(recall_score(y_test, y_pred, labels=[0,1], average='weighted'))
+  score_list.append(f1_score(y_test, y_pred, average='weighted', labels=[0, 1]))
 
-    list_accuracy.append(score_list[0])
-    list_precision.append(score_list[1])
-    list_recall.append(score_list[2])
-    list_sensitivity.append(score_list[3])
-    list_f1.append(score_list[4])
+  list_accuracy.append(score_list[0])
+  list_precision.append(score_list[1])
+  list_recall.append(score_list[2])
+  list_sensitivity.append(score_list[3])
+  list_f1.append(score_list[4])
   i+=1     
 
 print("mean accuracy:", statistics.mean(list_accuracy))
