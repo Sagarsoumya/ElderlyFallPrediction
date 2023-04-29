@@ -47,7 +47,7 @@ print('Accuracy:', accuracy)
 
 #precision and recall
 precision=precision_score(y_test,y_pred,labels=[0, 1], average='weighted')
-recall=recall_score(y_test,y_pred)
+recall=recall_score(y_test,y_pred,labels=[0, 1], average='weighted')
 
 print("Precision: ",precision)
 print("Recall: ",recall)
